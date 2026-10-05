@@ -1,0 +1,27 @@
+# ROS 2 & Colcon build directories
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+
+# Gazebo logs & cache
+~/.gazebo/log/
+*.log
+
+# IDE & OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
