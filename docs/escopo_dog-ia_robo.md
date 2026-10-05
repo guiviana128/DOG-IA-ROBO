@@ -6,7 +6,7 @@
 ## 1. Identificação do Projeto e Equipe
 
 - **Nome Oficial do Projeto:** DOG-IA — Robô Cão-Guia Urbano de Inteligência Assistiva
-- **Repositório Oficial no GitHub:** `https://github.com/guiviana128/DOG-IA_ROBO_CAO-GUIA`
+- **Repositório Oficial no GitHub:** `https://github.com/guiviana128/DOG-IA-ROBO`
 - **Disciplina:** Robótica Móvel Inteligente
 - **Instituição:** Centro Universitário FECAF
 - **Integrantes da Equipe:**

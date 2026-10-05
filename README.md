@@ -63,8 +63,8 @@ DOG-IA_ROBO_CAO-GUIA/
 Execute no terminal Linux/WSL2:
 ```bash
 # Clone o repositório
-git clone https://github.com/guiviana128/DOG-IA_ROBO_CAO-GUIA.git
-cd DOG-IA_ROBO_CAO-GUIA
+git clone https://github.com/guiviana128/DOG-IA-ROBO.git
+cd DOG-IA-ROBO
 
 # Torne executável e rode o script de setup
 chmod +x setup_ambiente_ros2.sh

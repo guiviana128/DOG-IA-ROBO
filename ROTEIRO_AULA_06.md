@@ -112,7 +112,7 @@ Vimos por meio deste formalizar a entrega da Etapa 1 (Setup e Inicialização do
    - Guilherme Viana (RA: 104865)
 
 2. Link Oficial do Repositório GitHub:
-   https://github.com/guiviana128/DOG-IA_ROBO_CAO-GUIA
+   https://github.com/guiviana128/DOG-IA-ROBO
 
 3. Documentação e Escopo:
    - README.md na raiz com integrantes e descrição.
