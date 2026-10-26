@@ -36,6 +36,8 @@ Operando sobre o middleware **ROS 2**, com simulação física 3D em **Gazebo** 
 DOG-IA_ROBO_CAO-GUIA/
 ├── README.md                      # Identificação dos integrantes, resumo e orientações
 ├── ROTEIRO_AULA_06.md             # Roteiro didático completo e checklist da Aula 06 (05/10)
+├── ROTEIRO_AULA_07.md             # Revisão da Parte 1 e aplicação da Parte 2 (Aula 07)
+├── dog_ia_core/                   # Pacote ROS 2 (Python) com o nó valida_ambiente
 ├── setup_ambiente_ros2.sh         # Script automatizado para preparação do ROS 2 e simulações
 ├── .gitignore                     # Filtros para artefatos ROS 2, build, log e cache
 ├── docs/                          # Documentação técnica oficial
@@ -95,6 +97,7 @@ rviz2
 ## 📅 Marcos de Entrega (AC-3 e AC-4)
 
 - **05/10/2026 (Aula 06):** Setup, criação do repositório, integrantes, escopo e validação de simuladores (0,25 pt).
+- **Aula 07:** Pacote `dog_ia_core` com o nó `valida_ambiente` publicando em `dog_ia/status`.
 - **Etapa 2 (AC-3):** Modelagem URDF do robô quadrúpede/diferencial e integração de sensores virtuais no Gazebo.
 - **Etapa 3 (AC-3):** Implementação dos nós de percepção (LiDAR 360° e detecção de semáforos).
 - **Etapa 4 (AC-4):** Integração do Nav2 com costmaps expandidos e máquina de estados de segurança.
