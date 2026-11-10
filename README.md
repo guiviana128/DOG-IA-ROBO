@@ -102,3 +102,16 @@ rviz2
 - **Etapa 3 (AC-3):** Implementação dos nós de percepção (LiDAR 360° e detecção de semáforos).
 - **Etapa 4 (AC-4):** Integração do Nav2 com costmaps expandidos e máquina de estados de segurança.
 - **Etapa Final (AC-4):** Simulação urbana completa com percurso guiado e apresentação do projeto.
+
+---
+
+## ✅ Checklist de Avaliação e Nivelamento
+
+| Requisito | Status |
+| :--- | :---: |
+| ROS 2 Humble e Gazebo instalados e operacionais | [x] |
+| Repositório no GitHub criado com o arquivo `docs/escopo_dog-ia_robo.md` | [x] |
+| Professor adicionado no GitHub (`flavio.santarelli@pro.fecaf.com.br`) | [x] |
+| Workspace `~/ros2_ws` compilado com o pacote `dog_ia_core` | [x] |
+| Nó `valida_ambiente` transmitindo mensagens no tópico `dog_ia/status` | [x] |
+

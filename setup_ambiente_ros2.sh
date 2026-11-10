@@ -29,8 +29,15 @@ echo "[INFO] Distribuição ROS 2 ativa: $ROS_DISTRO"
 
 # 2. Criação do workspace ros2_ws/src
 WORKSPACE_DIR="$HOME/ros2_ws"
-echo "[INFO] Configurando workspace em $WORKSPACE_DIR/src..."
-mkdir -p "$WORKSPACE_DIR/src"
+SRC_DIR="$WORKSPACE_DIR/src/DOG-IA_ROBO_CAO-GUIA"
+echo "[INFO] Configurando workspace em $SRC_DIR..."
+mkdir -p "$SRC_DIR"
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+if [ -d "$SCRIPT_DIR/dog_ia_core" ] && [ ! -d "$SRC_DIR/dog_ia_core" ]; then
+    echo "[INFO] Vinculando pacote dog_ia_core ao workspace..."
+    cp -r "$SCRIPT_DIR/dog_ia_core" "$SRC_DIR/"
+fi
 
 # 3. Compilação inicial do workspace com colcon
 cd "$WORKSPACE_DIR"

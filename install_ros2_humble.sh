@@ -29,16 +29,24 @@ echo "[3/6] Adicionando chaves do repositório ROS 2..."
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-# 4. Atualizar pacotes e instalar ROS 2 Humble Desktop
-echo "[4/6] Instalando ROS 2 Humble Desktop (pode levar alguns minutos)..."
+# 4. Atualizar pacotes e instalar ROS 2 Humble Desktop Full e ferramentas essenciais
+echo "[4/6] Instalando ROS 2 Humble Desktop Full e ferramentas..."
 sudo apt update
-sudo apt install -y ros-humble-desktop
+sudo apt install -y \
+  ros-humble-desktop-full \
+  ros-dev-tools \
+  gazebo \
+  ros-humble-gazebo-ros-pkgs \
+  ros-humble-joint-state-publisher-gui \
+  ros-humble-xacro \
+  ros-humble-teleop-twist-keyboard \
+  ros-humble-cv-bridge \
+  python3-opencv \
+  python3-colcon-common-extensions \
+  python3-rosdep
 
-# 5. Instalar Gazebo e ferramentas de compilação
-echo "[5/6] Instalando Gazebo, Colcon e ferramentas de desenvolvimento..."
-sudo apt install -y gazebo ros-humble-gazebo-ros-pkgs python3-colcon-common-extensions python3-rosdep
-
-# Inicializar rosdep se necessário
+# 5. Inicializar rosdep se necessário
+echo "[5/6] Configurando rosdep..."
 if [ ! -d "/etc/ros/rosdep" ]; then
     sudo rosdep init || true
 fi
